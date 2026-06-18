@@ -4,7 +4,11 @@
     <h5 class="card-title">{{ productData.title }}</h5>
     <p class="card-text">{{ productData.description }}</p>
     <p><strong>${{productData.price}}</strong></p>
-    <p>⭐ {{productData.rating}}/5</p>
-    <a href="#" class="btn btn-primary">Buy Now</a>
+    <p>⭐ {{productData.rating.rate}}/5</p>
+    <a
+  class="btn btn-primary"
+  [routerLink]="['/product', productData.id]">
+  Buy Now
+</a>
   </div>
 </div>

@@ -1,0 +1,23 @@
+.product-image{
+    width: 100%;
+    max-height: 450px;
+    object-fit: contain;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    background: white;
+}
+
+.container{
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+h2{
+    margin-bottom: 20px;
+}
+
+.text-success{
+    margin-bottom: 15px;
+}
