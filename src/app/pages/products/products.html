@@ -1,0 +1,17 @@
+<div class="container my-5">
+
+  <h2 class="text-center mb-4">Our Products</h2>
+
+  <div class="row">
+
+    @for (product of data; track product.id) {
+      <div class="col-md-4">
+        <app-product-card [productData]="product"></app-product-card>
+      </div>
+    } @empty {
+      <p>No products available</p>
+    }
+
+  </div>
+
+</div>
