@@ -1,14 +1,19 @@
-<div class="card" style="width: 18rem;">
-  <img src="{{ productData.image}}" class="card-img-top" alt="...">
+<div class="card w-100">
+  <img src="{{ productData.image }}" class="card-img-top" alt="{{ productData.title }}">
+
   <div class="card-body">
     <h5 class="card-title">{{ productData.title }}</h5>
-    <p class="card-text">{{ productData.description }}</p>
-    <p><strong>${{productData.price}}</strong></p>
-    <p>⭐ {{productData.rating.rate}}/5</p>
+
+    <p class="card-text">
+      <strong>${{ productData.price }}</strong>
+    </p>
+
+    <p>⭐ {{ productData.rating.rate }}/5</p>
+
     <a
-  class="btn btn-primary"
-  [routerLink]="['/product', productData.id]">
-  Buy Now
-</a>
+      class="btn btn-primary"
+      [routerLink]="['/product', productData.id]">
+      Buy Now
+    </a>
   </div>
 </div>

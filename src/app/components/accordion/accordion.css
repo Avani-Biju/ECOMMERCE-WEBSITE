@@ -1,0 +1,13 @@
+.accordion-button:not(.collapsed) {
+    background-color:  rgba(243, 242, 239, 0.652);
+    color: rgb(30, 25, 25);
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+    border-color: #515254;
+}
+
+.accordion-button:not(.collapsed)::after {
+    filter: brightness(0) invert(1);
+}
